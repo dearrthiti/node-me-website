@@ -14,7 +14,7 @@ const forecast = (lat, long, callback) => {
             const location = response.body.location.country + ', ' + response.body.location.region
             
             callback(undefined, {
-                forecast: location + ', It currently ' + data.current.temperature + ' degrees out. It feels like ' + data.current.feelslike + ' degrees out.',
+                forecast: 'It currently ' + data.current.temperature + ' degrees out. It feels like ' + data.current.feelslike + ' degrees out.',
                 location: location
             })
         }
